@@ -1,0 +1,49 @@
+Clear the console and close all figures
+
+Create a 3x3 game matrix filled with zeros
+
+Create a new figure and hide the axis
+
+Draw the initial game board on the figure
+
+Set a flag indicating it's player 1's turn
+
+Display instructions to enter play input
+
+Repeat indefinitely:
+    If it's player 1's turn:
+        Get input from player 1
+        If the input is invalid:
+            Continue to the next iteration
+        Update the game matrix with player 1's move
+        Set the flag indicating it's player 2's turn
+    Else:
+        Get input from player 2
+        If the input is invalid:
+            Continue to the next iteration
+        Update the game matrix with player 2's move
+        Set the flag indicating it's player 1's turn
+
+    Draw the updated game board on the figure
+
+    Set a variable winner to 0
+
+    If the game board is full:
+        Display a tie message
+        Show a message box indicating a tie game
+        Add a game record indicating a tie
+        Break out of the loop
+
+    If player 1 has won:
+        Set the winner variable to 1
+    Else if player 2 has won:
+        Set the winner variable to 2
+
+    If a winner is found:
+        Display the winning player message
+        Show a message box indicating the winning player
+        Add a game record indicating the winning player
+        Break out of the loop
+
+End of the loop
+
